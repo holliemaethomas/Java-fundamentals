@@ -1,10 +1,19 @@
 public class Main {
   public static void main(String[] args) {
-    System.out.println("main method is working!");
-  }
-}
-public static void pluralize (int, String[]) {
-  if (String.int % 2) {
+    int dogCount = 1;
+    System.out.println("I own" + dogCount+ " " + pluralize("dog", dogCount) + ".");
+    
+    int catCount = 2;
+    System.out.println("I own" + catCount+ " " + pluralize("cat", catCount) + ".");
 
+     int turtleCount = 0;
+    System.out.println("I own" + turtleCount+ " " + pluralize("turtle", turtleCount) + ".");
+  }
+  public static String pluralize(String word, int count) {
+    if (count > 1 || count === 0) {
+      return (word + "s")
+    } else {
+      return (word);
+    }
   }
 }
