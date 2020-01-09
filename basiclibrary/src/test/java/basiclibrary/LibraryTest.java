@@ -19,5 +19,20 @@ public class LibraryTest {
 
 
     }
+    @Test public void TestcontainsDuplicates() {
+        int[] inputArray = {1,1,2};
+        boolean actual = Library.containsDuplicates(inputArray);
+        assertTrue("the method returns a boolean value of either true or false",
+                actual);
+    }
+    @Test public void TestCalculatingAverages() {
+    int[] testArray = {1,2,4};
+    int average = 2;
+    assertEquals("The method should return the average of the numbers in the array",
+            average,
+            Library.calculatingAverages(testArray)
 
+    );
+
+    }
 }
