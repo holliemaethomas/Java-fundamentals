@@ -2,7 +2,7 @@
 first several labs of Java 401
 
 # basics
-Main.java
+Main.javav
 pluralize
 flipNHeads
 clock
@@ -17,3 +17,11 @@ method that accepts an array of integers and calculates and returns the average 
 
 ## findSmallestAverage
 method that, given an array of arrays, calculates the average value for each array and return the array with the lowest average
+
+# Lab three
+
+## weather data 
+this method should take in an array of weather data and return the highest and lowest temperatures
+
+## vote count
+this method should take in an array of strings, like a ballot, and return the winner
