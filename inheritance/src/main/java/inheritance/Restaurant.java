@@ -18,10 +18,10 @@ import java.util.LinkedList;
         }
         public void addReview(Review r){
             this.reviews.add(r);
-            r.restaurant = this;
+            r.Restaurants = this;
         }
     }
 
 
 
-//large amount of inserted code is because I had to kill my previous file with fire and paste my code back in :)
+//large amount of inserted code is because I had to kill my previous file with fire and paste my code back in :) I did also get some help from Hai
