@@ -4,7 +4,11 @@
 package basiclibrary;
 
 import org.junit.Test;
+
+import java.util.List;
+
 import static org.junit.Assert.*;
+import java.util.*;
 
 public class LibraryTest {
     @Test public void testSomeLibraryMethod() {
@@ -34,5 +38,39 @@ public class LibraryTest {
 
     );
 
+    }
+    @Test public void TestWeatherData() {
+        int[][] testWeatherArray = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        assertEquals(
+                "Function should return a message",
+                "Low: 51\n" +
+                        "High: 72\n" +
+                "63 temperature never occured\n" +
+                "67 temperature never occured\n" +
+                "68 temperature never occured\n" +
+                "69 temperature never occured\n",
+                LabThree.weatherData(testWeatherArray));
+    }
+    @Test public void TestVoteCount () {
+        List<String> votes = new ArrayList<>();;
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Shrub");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Shrub");
+            assertEquals( "method should return the winner and a message of who the winner was, if the count results in a tie it should return a message stating that no winner was declared",
+                    "No winner can be declared",
+                    LabThree.voteCount(votes)
+
+            );
     }
 }
