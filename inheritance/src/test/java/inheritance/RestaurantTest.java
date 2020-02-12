@@ -15,6 +15,7 @@ public class RestaurantTest {
                 testRestaurant.toString());
     }
 
+    @Test
     public void testAddReview() {
         Restaurant testRestaurant = new Restaurant("Farmers Daughter",
                 "$");
